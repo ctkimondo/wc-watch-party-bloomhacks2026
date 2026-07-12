@@ -49,7 +49,6 @@ export default function Home() {
                         <KnockoutBracket matches={mockMatches} />
                     )}
                 </section>
-
             </main>
 
             <Footer />
