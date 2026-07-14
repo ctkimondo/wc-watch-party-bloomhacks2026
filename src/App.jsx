@@ -1,5 +1,5 @@
 // Root component — sets up routing between pages
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext.jsx";
 import ProtectedRoute from "./components/common/protectedRoute.jsx";
 import Home from "./pages/Home";
@@ -11,7 +11,7 @@ import SportBusyWidget from "./pages/Widget.jsx";
 function App() {
     return (
         <AuthProvider>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/match/:matchId" element={<MatchDetail />} />
@@ -36,7 +36,7 @@ function App() {
                         }
                     />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </AuthProvider>
     );
 }
