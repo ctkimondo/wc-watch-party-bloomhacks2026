@@ -47,8 +47,6 @@
     display: block;
 }
 
-<<<<<<< HEAD
-=======
 .auth-user-menu {
     position: relative;
     padding-bottom: 8px;
@@ -87,7 +85,6 @@
     color: var(--live);
 }
 
->>>>>>> 4b1a64a3507fcfaf971e977ae38e433242903de9
 @media (max-width: 640px) {
     .auth-slot {
         margin: 10px 0 0;
